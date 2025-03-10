@@ -5,30 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="barra_nav">
         <img src="assets/images/estudio_renata_campos-removebg-preview (1).png" alt="Logo" class="logo">
         
-        <div id="hamburguer" class="hamburguer">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <div id="set-menu" class="set-menu">
+           
+            <div class="circles-container">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            
+            <div class="menu-bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        
-        <ul class="nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
     </nav>
     
     <div id="banner">
         <img src="assets/images/Banner-estudio-renata-campos.png" alt="Banner">
         <div id="overlay"></div>
+        <div>
+            <button id ="agendar">
+                <p>QUERO AGENDAR UM HORÁRIO</p>
+                <img i="whatsapp-icon" src="assets/icons/icons8-whatsapp.svg" alt=""
+                style="width: 23px;
+                width: 22px;
+                height: 22px;
+                position: absolute;
+                right: 23px;
+                top: 14px;
+                ">
+            </button>
+        </div>
     </div>
-    </script>
+
+
+
+        <div class="carousel-container">
+            <div id="scene">
+                <div id="left-zone">
+                    <ul class="list">
+                        <li class="item">
+                            <input type="radio" name="basic_carousel" id="radio_strawberry" checked>
+                            <label class="label_strawberry" for="radio_strawberry">Strawberry</label>
+                            <div class="content content_strawberry">
+                                <span class="picto"></span>
+                                <h1>Strawberry</h1>
+                                <p>Olá tenho 14</p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <input type="radio" name="basic_carousel" id="radio_banana">
+                            <label class="label_banana" for="radio_banana">Banana</label>
+                            <div class="content content_banana">
+                                <span class="picto"></span>
+                                <h1>Banana</h1>
+                                <p>A banana is an edible fruit, botanically a berry...</p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <input type="radio" name="basic_carousel" id="radio_apple">
+                            <label class="label_apple" for="radio_apple">Apple</label>
+                            <div class="content content_apple">
+                                <span class="picto"></span>
+                                <h1>Apple</h1>
+                                <p>The apple tree (Malus domestica) is a deciduous tree...</p>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <input type="radio" name="basic_carousel" id="radio_orange">
+                            <label class="label_orange" for="radio_orange">Orange</label>
+                            <div class="content content_orange">
+                                <span class="picto"></span>
+                                <h1>Orange</h1>
+                                <p>The orange (specifically, the sweet orange)...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="middle-border"></div>
+                <div id="right-zone"></div>
+            </div>
+        </div>
+    
+   
 </body>
 </html>
 
