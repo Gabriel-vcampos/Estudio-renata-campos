@@ -33,22 +33,112 @@
     </nav>
     
     <div id="banner">
-        <img class = "img-fluid"src="assets/images/Banner-estudio-renata-campos.png" alt="Banner">
+        <img class = "img-banner-fluid"src="assets/images/banner 2.png" alt="Banner">
         <div id="overlay"></div>
+        <a id="agendar" class="d-flex align-items-center justify-content-center gap-2 px-4 py-3" 
+   href="https://api.whatsapp.com/send/?phone=5521987482122&text&type=phone_number&app_absent=0" target="_blank">
+    <p class="m-0">QUERO AGENDAR UM HORÁRIO</p>
+    <img src="assets/icons/icons8-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
+</a>
     </div>
+
+   
+
+
+
+    <section class="fruit-carousel">
+        <nav class="fruit-menu">
+            <ul class="fruit-list">
+                <li class="fruit-item active" data-fruit="strawberry">🍓 Strawberry</li>
+                <li class="fruit-item" data-fruit="banana">🍌 Banana</li>
+                <li class="fruit-item" data-fruit="apple">🍎 Apple</li>
+                <li class="fruit-item" data-fruit="orange">🍊 Orange</li>
+            </ul>
+        </nav>
+
+        <article class="fruit-content">
+            <!-- Conteúdo do Morango -->
+            <div class="content-panel active" id="strawberry">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍓</div>
+                    <h2>Strawberry</h2>
+                    <p class="fruit-description">
+                        Strawberries are bright red, juicy, and sweet. They are an excellent source of vitamin C.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conteúdo da Banana -->
+            <div class="content-panel" id="banana">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍌</div>
+                    <h2>Banana</h2>
+                    <p class="fruit-description">
+                        Bananas are elongated, edible fruits produced by several kinds of large herbaceous plants.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conteúdo da Maçã -->
+            <div class="content-panel" id="apple">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍎</div>
+                    <h2>Apple</h2>
+                    <p class="fruit-description">
+                        An apple is an edible fruit produced by an apple tree (Malus domestica).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conteúdo da Laranja -->
+            <div class="content-panel" id="orange">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍊</div>
+                    <h2>Orange</h2>
+                    <p class="fruit-description">
+                        The orange is the fruit of various citrus species in the family Rutaceae.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            document.querySelectorAll('.fruit-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    document.querySelectorAll('.fruit-item').forEach(i => i.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    document.querySelectorAll('.content-panel').forEach(panel => {
+                        panel.classList.remove('active');
+                    });
+                    
+                    const target = this.getAttribute('data-fruit');
+                    document.getElementById(target).classList.add('active');
+                });
+            });
+        </script>
 </body>
 </html>
-<!--
-                <button id ="agendar">
-                <p>QUERO AGENDAR UM HORÁRIO</p>
-                <img i="whatsapp-icon" src="assets/icons/icons8-whatsapp.svg" alt=""
-                style="width: 23px;
-                width: 22px;
-                height: 22px;
-                position: absolute;
-                right: 23px;
-                top: 14px;
-                "
-
 
