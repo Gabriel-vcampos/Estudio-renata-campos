@@ -1,0 +1,60 @@
+main{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+   flex-direction: column;
+}
+
+nav{
+    border-bottom: 1px solid black;
+}
+
+img {
+
+    width: 100vh;
+}
+
+button{
+
+    background-color:  #fc4f7a;
+    border: none;
+    height: 50px;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 6px;
+    transition: 1s;
+}
+
+button:hover{
+    display: flex;
+    transition: 0.5s;
+    background-color:  #fc4f7a;
+    border: none;
+    height: 60px;
+    width: 260px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+  
+    text-align: center;
+    justify-content:center ;
+    align-items: center;
+
+    p{
+        display: none;
+        transition: 0.5s;
+    }
+    .whatsapp-icon{
+        display:block;
+        transition: 0.5s;
+    }
+}
+.whatsapp-icon{
+    display: none;
+   
+}
+
+blockquote{
+    width: 100vh;
+}
