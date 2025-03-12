@@ -1,0 +1,15 @@
+#services-div{
+    display: flex;
+    justify-content: space-around;
+   margin-top: 20px;
+}
+
+.ilustrative{
+
+    width: 20vh;
+}
+
+.text-service{
+    display: flex;
+    flex-direction: column;
+}
