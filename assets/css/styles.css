@@ -320,3 +320,126 @@
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+.main-footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 0 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Decorações */
+.footer-decoration {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 180px;
+    opacity: 100;
+    &.left { left: 0; }
+    &.right { right: 0; }
+}
+
+/* Seções */
+.footer-section {
+    flex: 1;
+    padding: 0 30px;
+}
+
+/* Logo e Redes Sociais */
+.footer-logo {
+    width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.social-link {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #ff99cc;
+    border-color: #ff99cc;
+}
+
+/* Títulos */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.pink-accent {
+    color: #ff99cc;
+}
+
+/* Listas de Contato e Horário */
+.contact-list li,
+.hours-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+.contact-list i {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.contact-list li:hover,
+.contact-list li:hover i {
+    color: #ff99cc;
+}
+
+.hours-list li:hover {
+    color: #ff99cc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    
+    .contact-list li,
+    .hours-list li {
+        justify-content: center;
+    }
+}
