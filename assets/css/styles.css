@@ -357,7 +357,7 @@
 
 /* Logo e Redes Sociais */
 .footer-logo {
-    width: 400px;
+    width: 200px;
     height: auto;
     margin-bottom: 30px;
 
@@ -366,6 +366,8 @@
 .social-icons {
     display: flex;
     gap: 15px;
+    padding-left: 55px;
+    padding-top: -10px;
 }
 
 
@@ -379,23 +381,40 @@
     justify-content: center;
     color: #fff;
     transition: all 0.3s ease;
+    font-size: 1.4rem; /* Tamanho do ícone */
+    text-decoration: none;
+    color: #fff;
 }
 
 .social-link:hover {
-    background: #ff99cc;
-    border-color: #ff99cc;
+    background: #fc4f7a;
+    border-color: #fc4f7a;
 }
+
+
+.social-link:hover {
+    background: #fc4f7a;
+    color: #000; /* Cor do ícone no hover */
+}*/
+*/
+
 
 /* Títulos */
 .section-title {
+    margin-top: -10px;
     font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
-}
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+    }
+
+    h3.section-title {
+        padding-left: 45px;
+        padding-bottom: 15px;
+    }
 
 .pink-accent {
-    color: #ff99cc;
+    color: #fc4f7a;
 }
 
 /* Listas de Contato e Horário */
@@ -416,11 +435,11 @@
 
 .contact-list li:hover,
 .contact-list li:hover i {
-    color: #ff99cc;
+    color: #fc4f7a;
 }
 
 .hours-list li:hover {
-    color: #ff99cc;
+    color: #fc4f7a;
 }
 
 /* Responsividade */
@@ -443,3 +462,55 @@
         justify-content: center;
     }
 }
+@media(max-width: 630px){
+    #agendar {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        background: #ffffff;
+        transition: all 0.3s ease;
+        min-width: 400px;
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+
+        .logo {
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+            right: 530px;
+            padding-top: 15px;
+        }
+
+
+    }
+}
+    @media(max-width: 430px){
+        #agendar {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        background: #ffffff;
+        transition: all 0.3s ease;
+        min-width: 300px;
+        text-decoration: none;
+        color: #000;
+        font-size: 10px;
+        
+
+        }
+    }
