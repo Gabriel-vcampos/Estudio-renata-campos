@@ -359,7 +359,9 @@
 .footer-logo {
     width: 200px;
     height: auto;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 25%
 
 }
 
@@ -367,7 +369,7 @@
     display: flex;
     gap: 20px;
     padding-left: 80px;
-    padding-top: -20px;
+    padding-top: -30px;
 }
 
 
@@ -386,6 +388,7 @@
     background: transparent; /* Garante fundo transparente */
     font-size: 1.4rem;
     text-decoration: none;
+    left: 22%;
 }
 
 /* Efeito do círculo que se contrai */
@@ -426,23 +429,54 @@
 /* Títulos */
 .section-title {
     margin-top: -10px;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
+    font-family: 'Playfair Display';
+    font-size: 2rem;
     margin-bottom: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     }
 
     h3.section-title {
         padding-left: 45px;
         padding-bottom: 15px;
+        text-shadow: 0 0 6px rgba(230, 138, 162, 0.8);
     }
 
-.pink-accent {
+.section-title-img{
+        width: 30px;
+        height: auto;
+        margin-top: -10px;
+    }
+
+/* Listas de Contato e Horário */
+/* Aplicar apenas à lista de contato (seção central) */
+.contact-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+/* Estilo específico para os ícones de contato */
+.contact-list-icons {
+    width: 24px; /* Tamanho dos ícones */
+    height: 24px;
+    transition: all 0.1s ease;
+}
+
+/* Hover apenas nos ícones da seção central */
+.contact-list li:hover .contact-list-icons {
+    filter: brightness(0) invert(1);
+    transform: translateY(-3px);
+}
+
+/* Manter o hover do texto */
+.contact-list li:hover {
     color: #fc4f7a;
 }
 
-/* Listas de Contato e Horário */
-.contact-list li,
+/* Manter o estilo da seção direita intacto */
 .hours-list li {
     margin-bottom: 15px;
     display: flex;
@@ -452,23 +486,10 @@
     cursor: default;
 }
 
-.contact-list i {
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-.contact-list li:hover,
-.contact-list li:hover i {
-    color: #fc4f7a;
-}
-
 .hours-list li:hover {
     color: #fc4f7a;
 }
 
-telefonemaluco{
-    fill: #fff;
-}
 
 /* Responsividade */
 @media (max-width: 768px) {

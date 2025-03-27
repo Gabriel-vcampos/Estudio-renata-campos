@@ -1,5 +1,5 @@
 
-// Funções do Carrossel de Frutas
+//Carrossel de Frutas
 document.querySelectorAll('.fruit-item').forEach(item => {
     item.addEventListener('click', function() {
         document.querySelectorAll('.fruit-item').forEach(i => i.classList.remove('active'));
@@ -14,7 +14,7 @@ document.querySelectorAll('.fruit-item').forEach(item => {
     });
 });
 
-// Funções da Sidebar
+//Sidebar
 const sidebar = document.getElementById('sidebar');
 const overlay = document.getElementById('overlay');
 const setMenu = document.querySelector('.set-menu');
@@ -23,7 +23,7 @@ setMenu.addEventListener('click', () => {
     sidebar.classList.toggle('active');
     overlay.classList.toggle('active');
     
-    // Controle da imagem da sidebar
+    // Controle imagem da sidebar
     const sidebarImage = document.querySelector('.sidebar-image');
     if (sidebar.classList.contains('active')) {
         sidebarImage.style.display = 'block';
