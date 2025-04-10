@@ -425,6 +425,8 @@
     color: #fff; 
 }
 
+/*Região newsletter*/
+
 
 /* Títulos */
 .section-title {
@@ -455,7 +457,7 @@
     align-items: center;
     gap: 10px;
     transition: color 0.3s ease;
-    cursor: default;
+    cursor: pointer;
 }
 
 /* Estilo específico para os ícones de contato */
@@ -483,7 +485,7 @@
     align-items: center;
     gap: 10px;
     transition: color 0.3s ease;
-    cursor: default;
+    cursor: pointer;
 }
 
 .hours-list li:hover {
