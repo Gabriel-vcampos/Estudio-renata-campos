@@ -427,6 +427,13 @@
 
 /*Região newsletter*/
 
+.maluco{
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.maluco:hover{
+    background-color: #fc4f7a;
+    
+}
 
 /* Títulos */
 .section-title {
