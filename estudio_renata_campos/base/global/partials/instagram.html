@@ -1,0 +1,41 @@
+<section class="container">
+    <h1 class="titulo-insta text-4xl flex justify-center font-bold">Acompanhe nosso Instagram
+    </h1>
+    <p class="mt-3 flex justify-center text-gray-600 text-sm">
+        Beleza com propósito e cuidado. Estúdio exclusivo desde 2014.<br/>
+    </p>
+    <p class="mb-2 flex justify-center text-gray-600 text-sm">Sobrancelhas, unhas, cabelos e bem-estar com carinho.
+    </p>
+<div class="elfsight-app-b7ca56d8-04c8-4694-8419-fbc3866c935d" flex justify-center data-elfsight-app-lazy></div>
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof window.eapps === 'object') {
+            window.eapps.platform.on('widget', function(event) {
+                if (event.detail.data.app === 'instagram-feed') {
+                   
+                    event.detail.data.settings.displayFreeLink = false;
+                    event.detail.data.settings.freeLinkUrl = '';
+                    
+                    
+                    const widgetEl = event.detail.element;
+                    const freeLink = widgetEl.querySelector('a[href*="elfsight.com"]');
+                    if (freeLink) {
+                        freeLink.remove();
+                    }
+                }
+            });
+        }
+    });
+    </script>
+    <script>
+        new MutationObserver((mutations) => {
+            const widget = document.querySelector('.elfsight-app-b7ca56d8-04c8-4694-8419-fbc3866c935d');
+            if (widget) {
+                const badLinks = widget.querySelectorAll('a[href*="elfsight.com"]');
+                badLinks.forEach(link => link.remove());
+            }
+        }).observe(document.body, { childList: true, subtree: true });
+        </script>
+
+</section>
